@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Informe interactivo de cuatro opciones de arriendo en la isla Santa Cruz, Galápagos."
+    />
+    <title>Informe de opciones de arriendo | Isla Santa Cruz</title>
+    <link rel="stylesheet" href="./styles-static.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#inicio">
+        <span class="brand-code">WWF</span>
+        <span>Informe de arriendos</span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <a href="#opciones">Opciones</a>
+        <a href="#comparacion">Comparación</a>
+        <a href="#fuente">Fuente de datos</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="report-header" id="inicio">
+        <div>
+          <p class="kicker">ISLA SANTA CRUZ · GALÁPAGOS</p>
+          <h1>Informe de opciones de arriendo</h1>
+          <p class="report-intro">
+            Presentación descriptiva de cuatro opciones. La información se
+            muestra tal como fue suministrada, sin calificaciones ni
+            recomendaciones.
+          </p>
+        </div>
+        <dl class="report-summary">
+          <div><dt>Opciones registradas</dt><dd>4</dd></div>
+          <div><dt>Fotografías disponibles</dt><dd>96</dd></div>
+          <div><dt>Barrios representados</dt><dd>3</dd></div>
+        </dl>
+      </section>
+
+      <section class="option-section" id="opciones">
+        <div class="section-title">
+          <p class="section-number">01</p>
+          <div>
+            <h2>Seleccione una opción</h2>
+            <p>
+              Use los botones para cambiar simultáneamente la ficha, la galería
+              y la ubicación geográfica.
+            </p>
+          </div>
+        </div>
+        <div class="option-selector" id="option-selector"></div>
+      </section>
+
+      <section class="property-report" aria-live="polite">
+        <header class="property-header">
+          <div>
+            <p id="property-type" class="property-type"></p>
+            <h2 id="property-name"></h2>
+            <p id="property-owner"></p>
+          </div>
+          <div class="price-block">
+            <span>Canon mensual informado</span>
+            <strong id="property-price"></strong>
+            <small id="property-negotiable"></small>
+          </div>
+        </header>
+
+        <div class="property-content">
+          <section class="gallery-panel" aria-labelledby="gallery-heading">
+            <div class="panel-heading">
+              <div>
+                <p class="section-number">02</p>
+                <h3 id="gallery-heading">Fotografías</h3>
+              </div>
+              <span id="photo-counter"></span>
+            </div>
+            <div class="category-filter" id="category-filter"></div>
+            <div class="main-photo">
+              <button id="photo-prev" aria-label="Fotografía anterior">←</button>
+              <img id="main-photo" alt="" />
+              <button id="photo-next" aria-label="Fotografía siguiente">→</button>
+              <span id="photo-caption"></span>
+            </div>
+            <div class="thumbnails" id="thumbnails"></div>
+          </section>
+
+          <aside class="facts-panel" aria-labelledby="facts-heading">
+            <div class="panel-heading">
+              <div>
+                <p class="section-number">03</p>
+                <h3 id="facts-heading">Características informadas</h3>
+              </div>
+            </div>
+            <dl class="facts-list">
+              <div><dt>Tipo de vivienda</dt><dd id="fact-type"></dd></div>
+              <div><dt>Planta</dt><dd id="fact-floor"></dd></div>
+              <div><dt>Barrio</dt><dd id="fact-neighborhood"></dd></div>
+              <div><dt>Habitaciones</dt><dd id="fact-rooms"></dd></div>
+              <div><dt>Baños</dt><dd id="fact-baths"></dd></div>
+              <div><dt>Espacios externos</dt><dd id="fact-outdoor"></dd></div>
+              <div><dt>Sala</dt><dd id="fact-living"></dd></div>
+              <div><dt>Cocina</dt><dd id="fact-kitchen"></dd></div>
+              <div><dt>Teléfono</dt><dd><a id="fact-phone"></a></dd></div>
+              <div><dt>Precio</dt><dd id="fact-price"></dd></div>
+              <div><dt>Negociable</dt><dd id="fact-negotiable"></dd></div>
+            </dl>
+          </aside>
+        </div>
+
+        <section class="location-panel" aria-labelledby="location-heading">
+          <div class="location-copy">
+            <p class="section-number">04</p>
+            <h3 id="location-heading">Ubicación geográfica</h3>
+            <p>
+              El mapa corresponde a las coordenadas suministradas para la
+              opción seleccionada. Puede acercar, alejar y desplazarse dentro
+              del mapa.
+            </p>
+            <dl>
+              <div><dt>Opción</dt><dd id="map-option"></dd></div>
+              <div><dt>Barrio</dt><dd id="map-neighborhood"></dd></div>
+              <div><dt>Coordenadas</dt><dd id="map-coordinates"></dd></div>
+            </dl>
+            <a id="open-map" target="_blank" rel="noreferrer">
+              Abrir en Google Maps ↗
+            </a>
+          </div>
+          <div class="map-frame">
+            <iframe
+              id="property-map"
+              title="Ubicación geográfica de la opción seleccionada"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </section>
+      </section>
+
+      <section class="comparison-section" id="comparacion">
+        <div class="section-title">
+          <p class="section-number">05</p>
+          <div>
+            <h2>Tabla comparativa</h2>
+            <p>
+              Comparación directa de los campos contenidos en la tabla original.
+              No se asignan puntajes.
+            </p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table>
+            <thead id="comparison-head"></thead>
+            <tbody id="comparison-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="source-section" id="fuente">
+        <p class="section-number">06</p>
+        <div>
+          <h2>Fuente y alcance</h2>
+          <p>
+            El informe utiliza la tabla “Tabla de opciones.xlsx”, las
+            coordenadas y las fotografías incluidas en la carpeta del proyecto.
+            No se verificaron disponibilidad, estado contractual, superficies,
+            servicios, distancias a lugares de interés ni otras condiciones que
+            no constan en los archivos suministrados.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>WWF · INFORME DE OPCIONES DE ARRIENDO</span>
+      <p>Isla Santa Cruz, Galápagos</p>
+      <a href="#inicio">Volver al inicio ↑</a>
+    </footer>
+
+    <script src="./site-data.js"></script>
+    <script src="./app-static.js"></script>
+  </body>
+</html>
