@@ -199,7 +199,7 @@ h1 {
 .option-selector {
   border: 1px solid var(--line);
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .option-selector button {
@@ -638,11 +638,11 @@ footer a {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .option-selector button:nth-child(2) {
+  .option-selector button:nth-child(even) {
     border-right: 0;
   }
 
-  .option-selector button:nth-child(-n + 2) {
+  .option-selector button:nth-child(-n + 4) {
     border-bottom: 1px solid var(--line);
   }
 

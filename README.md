@@ -1,6 +1,6 @@
 # Opciones de arriendo WWF
 
-Sitio web interactivo para explorar y comparar cuatro opciones de arriendo en
+Sitio web interactivo para explorar y comparar cinco opciones de arriendo en
 la isla Santa Cruz, Galápagos.
 
 ## Contenido

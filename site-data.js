@@ -486,5 +486,62 @@ window.PROPERTY_IMAGES = {
       "category": "Vista Calle",
       "alt": "Vista Calle de la opción de Cristian Armas"
     }
+  ],
+  "byron-rueda": [
+    {
+      "src": "./public/properties/byron-rueda/cocina-c1.webp",
+      "category": "Cocina",
+      "alt": "Cocina del Departamento Byron Rueda"
+    },
+    {
+      "src": "./public/properties/byron-rueda/comedor-c1.webp",
+      "category": "Comedor",
+      "alt": "Comedor del Departamento Byron Rueda"
+    },
+    {
+      "src": "./public/properties/byron-rueda/comedor-c2.webp",
+      "category": "Comedor",
+      "alt": "Comedor del Departamento Byron Rueda"
+    },
+    {
+      "src": "./public/properties/byron-rueda/entrada-entrada.webp",
+      "category": "Entrada",
+      "alt": "Entrada del Departamento Byron Rueda"
+    },
+    {
+      "src": "./public/properties/byron-rueda/habitacion-1-bano.webp",
+      "category": "Habitación 1",
+      "alt": "Habitación 1 del Departamento Byron Rueda"
+    },
+    {
+      "src": "./public/properties/byron-rueda/habitacion-1-h1.webp",
+      "category": "Habitación 1",
+      "alt": "Habitación 1 del Departamento Byron Rueda"
+    },
+    {
+      "src": "./public/properties/byron-rueda/habitacion-1-h1b.webp",
+      "category": "Habitación 1",
+      "alt": "Habitación 1 del Departamento Byron Rueda"
+    },
+    {
+      "src": "./public/properties/byron-rueda/habitacion-1-h1c.webp",
+      "category": "Habitación 1",
+      "alt": "Habitación 1 del Departamento Byron Rueda"
+    },
+    {
+      "src": "./public/properties/byron-rueda/habitacion-2-h2.webp",
+      "category": "Habitación 2",
+      "alt": "Habitación 2 del Departamento Byron Rueda"
+    },
+    {
+      "src": "./public/properties/byron-rueda/piscina-p1.webp",
+      "category": "Piscina",
+      "alt": "Piscina del Departamento Byron Rueda"
+    },
+    {
+      "src": "./public/properties/byron-rueda/vista-calle-vistacalle.webp",
+      "category": "Vista calle",
+      "alt": "Vista calle del Departamento Byron Rueda"
+    }
   ]
 };

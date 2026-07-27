@@ -74,6 +74,24 @@
       price: 800,
       negotiable: "No",
     },
+    {
+      id: "byron-rueda",
+      label: "Departamento Byron Rueda",
+      owner: "Byron Rueda",
+      type: "Departamento",
+      floor: "Segundo piso",
+      neighborhood: "Barrio Las Acacias",
+      coordinatesText: '0°44\'35.9"S 90°18\'51.5"W',
+      coordinates: [-0.7433120608329773, -90.3143081665039],
+      rooms: 2,
+      baths: 2.5,
+      outdoor: "Sí",
+      living: "No",
+      kitchen: "Sí",
+      phone: "0997519684",
+      price: 950,
+      negotiable: "Sí",
+    },
   ];
 
   const images = window.PROPERTY_IMAGES;
